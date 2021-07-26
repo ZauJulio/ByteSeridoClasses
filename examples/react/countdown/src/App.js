@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.scss";
 
 function App() {
@@ -13,16 +13,23 @@ function App() {
   const hoursUnit = hours % 10;
   const hoursDec = (hours - hoursUnit) / 10;
 
+  useEffect(() => {
+    setTimeout(() => setTime(time - 1), 1000);
+  }, [time]);
+
+
   return (
     <div className="App">
-      <div className="hours">
-        <span className="timeDigit">{hoursDec}</span>
-        <span className="timeDigit">{hoursUnit}</span>
-      </div>
-
-      <div className="minutesSeconds">
-        <span className="timeDigit">{secondsDec}</span>
-        <span className="timeDigit">{secondsUnit}</span>
+      <div className="container">
+        <div className="hours">
+          <span className="timeDigit">{hoursDec}</span>
+          <span className="timeDigit">{hoursUnit}</span>
+        </div>
+        <span className="twoPoints">:</span>
+        <div className="minutesSeconds">
+          <span className="timeDigit">{secondsDec}</span>
+          <span className="timeDigit">{secondsUnit}</span>
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #242826;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .container {
+    border: 6px solid aquamarine;
+    text-align: center;   
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
   .timeDigit {
+    font-size: 6rem;
+    color: aquamarine;
+  }
+  .twoPoints {
+    font-size: 4rem;  
+    color: aquamarine;
   }
   .hours {
+    
   }
   .minutesSeconds {
+
   }
 }
