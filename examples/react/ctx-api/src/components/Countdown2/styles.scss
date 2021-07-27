@@ -1,0 +1,17 @@
+.container2 {
+  border: 6px solid coral;
+  text-align: center;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .timeDigit {
+    font-size: 6rem;
+    color: coral;
+  }
+  .twoPoints {
+    font-size: 4rem;
+    color: coral;
+  }
+}

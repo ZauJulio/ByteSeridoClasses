@@ -1,0 +1,17 @@
+.container {
+  border: 6px solid aquamarine;
+  text-align: center;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .timeDigit {
+    font-size: 6rem;
+    color: aquamarine;
+  }
+  .twoPoints {
+    font-size: 4rem;
+    color: aquamarine;
+  }
+}
