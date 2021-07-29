@@ -1,0 +1,34 @@
+.countdownContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .containerTime {
+    border: 6px solid aquamarine;
+    text-align: center;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .timeDigit {
+      font-size: 6rem;
+      color: aquamarine;
+    }
+    .twoPoints {
+      font-size: 4rem;
+      color: aquamarine;
+    }
+  }
+
+  .containerButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+}
